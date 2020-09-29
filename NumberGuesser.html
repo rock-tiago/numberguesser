@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Number Guesser </title>
+    <link rel="stylesheet" type="text/css" href="numberGuesser.css">
+  </head>
+  <body>
+   <h1 id="title"> Number Guesser! </h1>
+   <div id="game">
+   <div id="computer"> 
+     <p> 
+       Computer Score: <span id="computer-score"> 0 </span>
+     </p>
+   </div>
+   <div id="human">
+     <p>
+       Human Score: <span id="human-score"> 0 </span>
+     </p>
+   </div>
+     <h2 id="targetNumber"> Target Number: <span id="target-number"> ? </span> </h2>
+     <h3 id="computerChoice"> Computer chose: <span id="computer-choice"> ? </span></h3>
+     <h3> Your number: </h3>
+     <input id="Human-choice" type="number" autocomplete="off" required>
+     <button id="checkWinner" onclick="checkWinner()"> Check! </button>
+     <h4> <span id="errorMessage"> </span> </h4> 
+     <h1> <span id="output"> </span> </h1>
+  </div>
+     <div id="rules">
+       <p>
+       <h2> Step 1: </h2> <br>
+       Choose a number between 0 and 9 and put it in the input.
+       </p>
+       <p>
+         <h2> Step 2: </h2> <br>
+         Press the button "Check!" to see who wins the round! You get one point per win.
+       </p>
+     </div>
+  </body>
+  <script src="numberGuesser.js"></script>
+</html>
+
